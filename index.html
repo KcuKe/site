@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fre3dom</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #0a0a0a;
+            color: #00ff88;
+            font-family: 'Courier New', monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+        }
+        .container {
+            text-align: center;
+            border: 1px solid #00ff8844;
+            padding: 40px;
+            border-radius: 8px;
+            background: #0f0f0f;
+            box-shadow: 0 0 30px rgba(0, 255, 136, 0.05);
+        }
+        h1 {
+            font-size: 2.2rem;
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+            color: #00ff88;
+        }
+        .tagline {
+            font-size: 1rem;
+            color: #88ffbb;
+            margin-bottom: 30px;
+            border-bottom: 1px dashed #00ff8844;
+            padding-bottom: 15px;
+        }
+        .links {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .links a {
+            color: #00ff88;
+            text-decoration: none;
+            font-size: 0.9rem;
+            border: 1px solid transparent;
+            padding: 6px 14px;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .links a:hover {
+            border-color: #00ff88;
+            background: #00ff8811;
+            box-shadow: 0 0 15px #00ff8833;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 0.7rem;
+            color: #446655;
+            letter-spacing: 1px;
+        }
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 20px;
+            background: #00ff88;
+            animation: blink 1s step-end infinite;
+            vertical-align: text-bottom;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        .ascii {
+            font-size: 0.6rem;
+            color: #226644;
+            margin-bottom: 20px;
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ascii">
+   _  _  _  _  _  _  _  _  _  _  _  _
+  / \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \
+ ( f r e 3 d o m . d u c k d n s )
+  \_/\_/\_/\_/\_/\_/\_/\_/\_/\_/\_/\_/
+        </div>
+        <h1>FRE3DOM</h1>
+        <div class="tagline">
+            > entry point to the void <span class="cursor"></span>
+        </div>
+        <div class="links">
+            <a href="#">/chat</a>
+            <a href="#">/vpn</a>
+            <a href="#">/gate</a>
+            <a href="#">/status</a>
+        </div>
+        <div class="footer">
+            [ anonymous | encrypted | no logs ]
+        </div>
+    </div>
+</body>
+</html>
